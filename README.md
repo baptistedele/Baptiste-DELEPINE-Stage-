@@ -1,1 +1,0 @@
-# Baptiste-DELEPINE-Stage-
