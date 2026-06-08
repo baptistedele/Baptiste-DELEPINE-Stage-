@@ -1,0 +1,10 @@
+# Installation NM
+sudo apt install network-manager -y
+
+# Désactivation dhcpcd (conflit avec NM)
+sudo systemctl stop dhcpcd
+sudo systemctl disable dhcpcd
+
+# Activation NM
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
