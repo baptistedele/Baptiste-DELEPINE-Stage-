@@ -1,0 +1,5 @@
+sudo apt install iftop
+
+sudo apt install iperf3 
+
+sudo apt install netperf
