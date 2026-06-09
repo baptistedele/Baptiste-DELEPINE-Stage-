@@ -12,7 +12,7 @@ class MinimalPublisher(Node):# Création de la classe Noeud publisher
         self.i = 0 # initialise un compteur à 0 (initialisation du timer)
 
     def timer_callback(self):
-        msg=String() # créer un message avec le tyoe String
+        msg=String() # créer un message avec le type String
         msg.data = 'Hello World: %d' % self.i = # définition du contenu du message puis définition du compteur qui permettra de savoir combien de fois on a envoyé le message
         self.publisher_.publish(msg) # envoie un message sur le topic
         self.get_logger().info('Publishing: "%s"' % msg.data) # permet d'avoir des logins messages. Autrement dit cela permet de voir si le message a été publié
